@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./style.css">
+      <title>Dashboard</title>
+   </head>
+   <body>
+      <header class="first-header">
+         <div class="first-header-left-side">
+            <button class="search-btn" aria-label="Search">
+               <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="currentColor">
+                  <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109
+                     0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56
+                     56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75
+                     0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+            </button>
+            <input class="search" type="text" name="search"/>
+         </div>
+         <div class="first-header-right-side">
+            <button class="notifications-btn" aria-label="See notifications">
+               <svg class="notifications-icon" xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="currentColor">
+                  <path d="M80-560q0-100 44.5-183.5T244-882l47 64q-60 44-95.5
+                     111T160-560H80Zm720 0q0-80-35.5-147T669-818l47-64q75
+                     55 119.5 138.5T880-560h-80ZM160-200v-80h80v-280q0-83
+                     50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5
+                     17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-300Zm0
+                     420q-33 0-56.5-23.5T400-160h160q0
+                     33-23.5 56.5T480-80ZM320-280h320v-280q0-66-47-113t-113-47q-66 0-113 47t-47 113v280Z"/></svg>
+            </button>
+            <img id="pfp-icon" src="./images/profile-picture.jpeg" alt="Profile Picture">
+            <div class="profile-username">Bruce Wayne</div>
+            <button class="theme-mode" aria-label="Toggle theme">
+               <svg class="sun" xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="currentColor" aria-hidden="true">
+                  <path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83
+                     0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720
+                     0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97
+                     57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59
+                     57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/>
+               </svg>
+
+               <svg class="moon" xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="currentColor" aria-hidden="true">
+                  <path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14
+                     0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0
+                     101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/>
+               </svg>
+            </button>
+         </div>
+      </header>
+      <header class="second-header">
+         <div class="second-header-left-side">
+            <img id="second-pfp-icon" src="./images/profile-picture.jpeg" alt="Profile Picture">
+            <div class="header-greeting">
+               <div>Hi there,</div>
+               <div>Bruce Wayne (@bruce)</div>
+            </div>
+         </div>
+         <div class="nav-buttons">
+            <button class="nav-button" aria-label="New project">New</button>
+            <button class="nav-button" aria-label="Upload project">Upload</button>
+            <button class="nav-button" aria-label="Share project">Share</button>
+         </div>
+      </header>
+      <nav class="sidebar">
+         <div class="sidebar-header">
+            <a class="Home" href="./index.html" >
+               <svg class="dashboard-icon" xmlns="http://www.w3.org/2000/svg" height="55px" viewBox="0 -960 960 960" width="55px" fill="currentColor">
+                  <path d="M520-600v-240h320v240H520ZM120-440v-400h320v400H120Zm400
+                     320v-400h320v400H520Zm-400 0v-240h320v240H120Z"/></svg>
+            </a>
+            <h1>Dashboard</h1>
+         </div>
+         <ul class="sidebar-nav-list">
+            <div class="upper-sidebar-nav">
+               <li class="sidebar-links"><img src="./images/home.svg" alt="Home"> Home</li>
+               <li class="sidebar-links"><img src="./images/profile.svg" alt="Profile"> Profile</li>
+               <li class="sidebar-links"><img src="./images/messages.svg" alt="Messages"> Messages</li>
+               <li class="sidebar-links"><img src="./images/history.svg" alt="History"> History</li>
+               <li class="sidebar-links"><img src="./images/tasks.svg" alt="Tasks"> Tasks</li>
+               <li class="sidebar-links"><img src="./images/communities.svg" alt="Communities"> Communities</li>
+            </div>
+            <div class="lower-sidebar-nav">
+               <li class="sidebar-links"><img src="./images/settings.svg" alt="Settings"> Settings</li>
+               <li class="sidebar-links"><img src="./images/support.svg" alt="Support"> Support</li>
+               <li class="sidebar-links"><img src="./images/privacy.svg" alt="Privacy"> Privacy</li>
+            </div>
+         </ul>
+      </nav>
+      <main>
+         <section class="projects">
+            <h2>Your Projects</h2> 
+            <div class="projects-box">
+               <div class="project-card">
+                  <h3>First Dashboard</h3>
+                  <p>A dashboard layout built using CSS Grid.</p>
+                  <div class="project-links-container">
+                     <button class="project-link" aria-label="Star Project">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="currentColor">
+                           <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13
+                              111 97-33 143ZM233-120l65-281L80-590l288-25 112-265
+                              112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"/></svg>
+                     </button>
+                     <button class="project-link" aria-label="Seen Project">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 0 24 24" width="28px" fill="currentColor">
+                           <path d="M0 0h24v24H0z" fill="none"/>
+                           <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11
+                              7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76
+                              0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66
+                              0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                     </button>
+                     <a class="project-link"
+                        href="https://github.com/Officerk-49/first-dashboard"
+                        aria-label="Github"
+                        target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28px" height="28px"
+                           fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                           <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+                              0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01
+                              1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95
+                              0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0
+                              .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44
+                              1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48
+                              0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                        </svg>
+                     </a>
+                  </div>
+               </div>
+               <div class="project-card">
+                  <h3>Color Flipper</h3>
+                  <p>Randomly changes page background color on click using JavaScript.</p>
+                  <div class="project-links-container">
+                     <button class="project-link" aria-label="Star Project">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="currentColor">
+                           <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13
+                              111 97-33 143ZM233-120l65-281L80-590l288-25 112-265
+                              112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"/></svg>
+                     </button>
+                     <button class="project-link" aria-label="Seen Project">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 0 24 24" width="28px" fill="currentColor">
+                           <path d="M0 0h24v24H0z" fill="none"/>
+                           <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11
+                              7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76
+                              0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66
+                              0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                     </button>
+                     <a class="project-link"
+                        href="https://github.com/Officerk-49/javascript-projects/tree/main/color-flipper"
+                        aria-label="Github"
+                        target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28px" height="28px"
+                           fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                           <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+                              0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01
+                              1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95
+                              0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0
+                              .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44
+                              1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48
+                              0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                        </svg>
+ 
+                     </a>
+                  </div>
+               </div>
+               <div class="project-card">
+                  <h3>Counter</h3>
+                  <p>Increment/decrement counter with interactive JavaScript buttons.</p>
+                  <div class="project-links-container">
+                     <button class="project-link" aria-label="Star Project">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="currentColor">
+                           <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13
+                              111 97-33 143ZM233-120l65-281L80-590l288-25 112-265
+                              112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"/></svg>
+                     </button>
+                     <button class="project-link" aria-label="Seen Project">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 0 24 24" width="28px" fill="currentColor">
+                           <path d="M0 0h24v24H0z" fill="none"/>
+                           <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11
+                              7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76
+                              0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66
+                              0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                     </button>
+                     <a class="project-link"
+                        href="https://github.com/Officerk-49/javascript-projects/tree/main/counter"
+                        aria-label="Github"
+                        target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28px" height="28px"
+                           fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                           <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+                              0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01
+                              1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95
+                              0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0
+                              .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44
+                              1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48
+                              0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                        </svg>
+ 
+                     </a>
+                  </div>
+               </div>
+               <div class="project-card">
+                  <h3>Etch-a-Sketch</h3>
+                  <p>An interactive drawing grid created with JavaScript, allowing users to draw by hovering and reset or resize the grid dynamically.</p>
+                  <div class="project-links-container">
+                     <button class="project-link" aria-label="Star Project">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="currentColor">
+                           <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13
+                              111 97-33 143ZM233-120l65-281L80-590l288-25 112-265
+                              112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"/></svg>
+                     </button>
+                     <button class="project-link" aria-label="Seen Project">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 0 24 24" width="28px" fill="currentColor">
+                           <path d="M0 0h24v24H0z" fill="none"/>
+                           <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11
+                              7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76
+                              0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66
+                              0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                     </button>
+                     <a class="project-link"
+                        href="https://github.com/Officerk-49/Etch-a-Sketch"
+                        aria-label="Github"
+                        target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28px" height="28px"
+                           fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                           <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+                              0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01
+                              1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95
+                              0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0
+                              .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44
+                              1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48
+                              0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                        </svg>
+ 
+                     </a>
+                  </div>
+               </div>
+               <div class="project-card">
+                  <h3>First Form</h3>
+                  <p>My first Styled sign-up form, focuced on form controls, accessibility, and visual feedback.</p>
+                  <div class="project-links-container">
+                     <button class="project-link" aria-label="Star Project">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="currentColor">
+                           <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13
+                              111 97-33 143ZM233-120l65-281L80-590l288-25 112-265
+                              112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"/></svg>
+                     </button>
+                     <button class="project-link" aria-label="Seen Project">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 0 24 24" width="28px" fill="currentColor">
+                           <path d="M0 0h24v24H0z" fill="none"/>
+                           <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11
+                              7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76
+                              0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66
+                              0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                     </button>
+                     <a class="project-link"
+                        href="https://github.com/Officerk-49/First-Form"
+                        aria-label="Github"
+                        target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28px" height="28px"
+                           fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                           <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+                              0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01
+                              1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95
+                              0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0
+                              .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44
+                              1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48
+                              0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                        </svg>
+                     </a>
+                  </div>
+               </div>
+               <div class="project-card">
+                  <h3>Basic Calculator</h3>
+                  <p>A simple, functional calculator built with HTML, CSS, and JavaScript.</p>
+                  <div class="project-links-container">
+                     <button class="project-link" aria-label="Star Project">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="currentColor">
+                           <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13
+                              111 97-33 143ZM233-120l65-281L80-590l288-25 112-265
+                              112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"/></svg>
+                     </button>
+                     <button class="project-link" aria-label="Seen Project">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 0 24 24" width="28px" fill="currentColor">
+                           <path d="M0 0h24v24H0z" fill="none"/>
+                           <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11
+                              7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76
+                              0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66
+                              0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                     </button>
+                     <a class="project-link"
+                        href="https://github.com/Officerk-49/Basic-Calculator"
+                        aria-label="Github"
+                        target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28px" height="28px"
+                           fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                           <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+                              0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01
+                              1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95
+                              0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0
+                              .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44
+                              1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48
+                              0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <aside class="right-panel">
+            <section class="announcements">
+               <h2 id="announcements-header" >Announcements</h2>
+               <div class="announcements-box">
+                  <div class="first-ann">
+                     <h4>Site Maintenance</h4>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                  <hr>
+                  <div class="second-ann">
+                     <h4>CommunityShare Day</h4>
+                     <p>Sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                  </div>
+                  <hr>
+                  <div class="third-ann">
+                     <h4>Updated Privacy Policy</h4>
+                     <p>Ut enim ad minim veniam, ex ea commodo consequat.</p>
+                  </div>
+               </div>
+            </section>
+            <section class="trending">
+               <h2>Trending</h2>
+               <div class="trending-box">
+                  <img id="superman-icon" src="./images/superman-icon.png" alt="Superman Icon">
+                  <div class="trend-info">
+                     <div class="user">@clark</div>
+                     <div class="nickname">Superman</div>
+                  </div>
+                  <img src="./images/daredevil-icon.png" alt="Daredevil Icon">
+                  <div class="trend-info">
+                     <div class="user">@Matt</div>
+                     <div class="nickname">Daredevil</div>
+                  </div>
+                  <img src="./images/wallywest-icon.jpeg" alt="Wally West Icon">
+                  <div class="trend-info">
+                     <div class="user">@wally</div>
+                     <div class="nickname">Wally West</div>
+                  </div>
+                  <img src="./images/constantine.jpeg" alt="John Constantine Icon">
+                  <div class="trend-info">
+                     <div class="user">@john</div>
+                     <div class="nickname">John Constantine</div>
+                  </div>
+               </div>
+            </section>
+         </aside>
+      </main>
+
+      <script src="./script.js"></script>
+   </body>
+</html>
